@@ -20,3 +20,12 @@ Route::get('/', function () {
 
 Route::get('/user', 'pollController@create_poll');
 Route::post('/user', 'pollController@store_poll');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/home' , 'HomeController@register');
+
+Route::post('/home', 'pollController@store_poll');
+
