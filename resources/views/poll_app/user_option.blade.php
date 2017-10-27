@@ -10,13 +10,14 @@
         </div>
 
         <form action="#" method="post">
+        {{ csrf_field() }}
             <label for="poll_name">Poll Name</label>
                 <br>
             <input type="text" name="poll_name">
                 <br><br>
             <label for="desc">Description</label>
                 <br>
-            <textarea name="desc" id="" cols="30" rows="10"></textarea>
+         <input type="text" name="desc">
                 <br><br>
             <input type="submit" value="Submit">
         </form>

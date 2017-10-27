@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 
 
-    Route::get('/users', 'voteController@index@');
+    
 });
 
-
 Route::get('/user', 'pollController@create_poll');
+Route::post('/user', 'pollController@store_poll');
