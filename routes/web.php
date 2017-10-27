@@ -29,3 +29,10 @@ Route::post('/home' , 'HomeController@register');
 
 Route::post('/home', 'pollController@store_poll');
 
+Route::get('/polls/{id}/options' , 'pollController@options');
+Route::post('/polls/{id}/options', 'pollController@option');
+
+//Route::get('/polls/{id}/options/create', 'pollController@create_option');
+//Route::post('/polls/{id}/options', 'pollController@store_option');
+
+

@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function register() {
 
         $create_poll = DB::insert('insert into users (name, email,password,updated_at,created_at) values (?, ?, ?, ?, ?)', [$_POST['name'], $_POST['email'],$_POST['password'] ]);
-        var_dump($create_poll);
+        //var_dump($create_poll);
     
     }
 }
