@@ -17,3 +17,6 @@ Route::get('/', function () {
 
     Route::get('/users', 'voteController@index@');
 });
+
+
+Route::get('/user', 'pollController@create_poll');
