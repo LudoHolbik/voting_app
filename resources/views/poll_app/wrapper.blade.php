@@ -9,6 +9,6 @@
     <title></title>
 </head>
 <body>
-    
+    @yield('results')
 </body>
 </html>
